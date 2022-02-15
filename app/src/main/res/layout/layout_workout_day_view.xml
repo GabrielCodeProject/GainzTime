@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:tag="day_container">
+
+    <TextView
+        android:id="@+id/tv_title_day"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="90"
+        android:gravity="center|start"
+        android:text="Day 1"
+        android:textSize="35dp"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_is_train"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:gravity="center" />
+
+</LinearLayout>

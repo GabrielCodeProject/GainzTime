@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.InscriptionActivity">
+
+    <com.example.gainztime.views.HeaderLogoView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+    </com.example.gainztime.views.HeaderLogoView>
+
+    <ScrollView
+        android:id="@+id/scrollview_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80">
+
+        <LinearLayout
+            android:id="@+id/ll_formulaire"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <!--Photo container-->
+            <LinearLayout
+                android:id="@+id/img_user_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/user_128px" />
+
+                <Button
+                    android:id="@+id/btn_add_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Picture" />
+
+            </LinearLayout>
+
+            <com.example.gainztime.views.FieldView
+                android:id="@+id/view_firstname_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="First Name:" />
+
+            <com.example.gainztime.views.FieldView
+                android:id="@+id/view_lastname_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Last Name:" />
+
+            <!--Gender radiobutton-->
+            <LinearLayout
+                android:id="@+id/ll_gender_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:text="Gender:"
+                    android:textAlignment="textEnd" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroup_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="75">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:tag="0"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:tag="1"
+                        android:text="Female" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="Other" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <!--Age and weight-->
+            <LinearLayout
+                android:id="@+id/ll_age_weight_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.example.gainztime.views.FieldView
+                    android:id="@+id/view_age_field"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:title="Age:" />
+
+                <com.example.gainztime.views.FieldView
+                    android:id="@+id/view_weight_field"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:title="Weigth:" />
+
+            </LinearLayout>
+
+            <!--Height user-->
+            <LinearLayout
+                android:id="@+id/ll_height_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:text="Heigth:"
+                    android:textAlignment="textEnd" />
+
+                <Spinner
+                    android:id="@+id/spinner_height"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="75"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+            <!--Level fitness setting-->
+            <LinearLayout
+                android:id="@+id/ll_level_fitness_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:text="Level Fitness:"
+                    android:textAlignment="textEnd" />
+
+                <Spinner
+                    android:id="@+id/spinner_level_fitness"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="75"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_confirm_add_user"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Confirm" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.example.gainztime.views.MenuNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+    </com.example.gainztime.views.MenuNavigationView>
+
+</LinearLayout>

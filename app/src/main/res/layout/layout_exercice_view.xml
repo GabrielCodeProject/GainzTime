@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:tag="Exercice info">
+
+    <ImageView
+        android:id="@+id/img_exercice"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="25"
+        android:src="@drawable/user_128px"/>
+
+    <TextView
+        android:id="@+id/tv_info_exercice"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="75"
+        android:gravity="center"
+        android:text="Exercice execution" />
+
+</LinearLayout>

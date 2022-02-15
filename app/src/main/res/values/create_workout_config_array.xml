@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="training_type">
+        <item>Beginner</item>
+        <item>Force</item>
+        <item>Endurance</item>
+        <item>Cardio</item>
+    </string-array>
+    <string-array name="goal_list">
+        <item>Hypertrophie</item>
+        <item>Weight loss</item>
+        <item>Rehab</item>
+        <item>maintain</item>
+    </string-array>
+</resources>

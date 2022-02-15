@@ -1,0 +1,23 @@
+{
+  "bench_incline": {
+    "id": "1",
+    "nameExercise": "bench_incline",
+    "image": "src",
+    "descriptionProcedure": "4 serie de 8 repetition 60 secondes de repos",
+    "isExecute": "false"
+  },
+  "bench_close_grip": {
+    "id": "2",
+    "nameExercise": "bench_close_grip",
+    "image": "src",
+    "descriptionProcedure": "4 serie de 8 repetition 60 secondes de repos",
+    "isExecute": "false"
+  },
+  "bench": {
+    "id": "3",
+    "nameExercise": "bench",
+    "image": "src",
+    "descriptionProcedure": "4 serie de 8 repetition 60 secondes de repos",
+    "isExecute": "false"
+  }
+}
